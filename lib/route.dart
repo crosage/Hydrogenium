@@ -1,4 +1,5 @@
 import 'package:arknights_offline_helper/pages/base_page.dart';
+import 'package:arknights_offline_helper/pages/lib_page.dart';
 import 'package:arknights_offline_helper/pages/operator_page.dart';
 import 'package:arknights_offline_helper/pages/select_page.dart';
 import 'package:get/get.dart';
@@ -17,6 +18,10 @@ class AscentRoutes {
     GetPage(
         name: '/select',
         page: ()=> SelectPage(),
+    ),
+    GetPage(
+      name: '/lib',
+      page: ()=> LibPage(),
     ),
   ];
 }

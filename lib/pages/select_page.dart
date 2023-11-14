@@ -22,14 +22,16 @@ class _SelectPageState extends State<SelectPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: ListView.builder(
-        itemCount: paths.length,
-        itemBuilder: (context, index) {
-          return Operator(
-            img: paths[index],
-            height: 200,
-          );
-        },
+      body: Wrap(
+        children: List.generate(
+          paths.length,
+              (index) {
+            return Operator(
+              img: paths[index],
+              height: 200,
+            );
+          },
+        ),
       ),
     );
   }
